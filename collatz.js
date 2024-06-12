@@ -53,10 +53,10 @@ const main = () => {
           errorCode = 'ループ感知';
       }
       // console.log(`${i}：途中停止、${errorCode}`)
-      result += `${i}：途中停止、${errorCode}\n`
+      result += `途中停止、${errorCode}\n`
     } else {
       // console.log(`${i}：${steps}`)
-      result += (`${i}：${steps}\n`)
+      result += (`${steps}\n`)
     }
   }
   require('fs').writeFileSync('result.txt', result);
